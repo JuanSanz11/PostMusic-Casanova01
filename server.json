@@ -1,0 +1,166 @@
+{
+  "episodes": [
+    {
+      "id": "Reggaeton-Music",      
+      "title": "Asunto",
+      "members": "Casanova",
+      "published_at": "2014",
+      "thumbnail": "/onetwo.png",
+      "description": "",
+      "file": {
+        "url": "https://raw.githubusercontent.com/JuanSanz11/Album01-Discos-M-Ms-y-Casanova/main/Asunto%20(Casanova).mp3",
+        "type": "audio/mpeg",
+        "duration": 168
+      }
+    },
+
+    {
+      "id": "Reggaeton-Music",      
+      "title": "Ansiedad",
+      "members": "Casanova",
+      "published_at": "2014",
+      "thumbnail": "/onetwo.png",
+      "description": "<p>3 compositores</p><p>Sangre de acentos</p><p>WebAppRetro</p>",
+      "file": {
+        "url": "https://raw.githubusercontent.com/JuanSanz11/Album01-Discos-M-Ms-y-Casanova/main/Ansiedad%20(Casanova).mp3",
+        "type": "audio/mpeg",
+        "duration": 142
+      }
+    },
+
+    {
+      "id": "Reggaeton-Music",      
+      "title": "Caramelo",
+      "members": "M&M's",
+      "published_at": "2013",
+      "thumbnail": "/one.png",
+      "description": "<p>3 compositores</p><p>Sangre de acentos</p><p>WebAppRetro</p>",
+      "file": {
+        "url": "https://raw.githubusercontent.com/JuanSanz11/Album01-Discos-M-Ms-y-Casanova/main/Caramelo%20(los%20M%26Ms%20musicales).mp3",
+        "type": "audio/mpeg",
+        "duration": 211
+      }
+    },
+
+    {
+      "id": "Reggaeton-Music",      
+      "title": "Lo que tu quieras",
+      "members": "Casanova - Nick and Kidboy",
+      "published_at": "2011",
+      "thumbnail": "/onetwo.png",
+      "description": "<p>3 compositores</p><p>Sangre de acentos</p><p>WebAppRetro</p>",
+      "file": {
+        "url": "https://raw.githubusercontent.com/JuanSanz11/Album01-Discos-M-Ms-y-Casanova/main/Lo%20que%20tu%20Quieres%20(Casanova%20feat%20Nick%20and%20Kid%20Boy).mp3",
+        "type": "audio/mpeg",
+        "duration": 246
+      }
+    },
+
+    {
+      "id": "Reggaeton-Music",      
+      "title": "Olas viajeras",
+      "members": "Casanova",
+      "published_at": "2011",
+      "thumbnail": "/onetwo.png",
+      "description": "<p>3 compositores</p><p>Sangre de acentos</p><p>WebAppRetro</p>",
+      "file": {
+        "url": "https://raw.githubusercontent.com/JuanSanz11/Album01-Discos-M-Ms-y-Casanova/main/Olas%20Viajeras%20(Casanova).mp3",
+        "type": "audio/mpeg",
+        "duration": 208
+      }
+    },
+
+    {
+      "id": "Reggaeton-Music",      
+      "title": "Tu decides hoy",
+      "members": "Casanova",
+      "published_at": "2011",
+      "thumbnail": "/onetwoth.png",
+      "description": "<p>3 compositores</p><p>Sangre de acentos</p><p>WebAppRetro</p>",
+      "file": {
+        "url": "https://raw.githubusercontent.com/JuanSanz11/Album01-Discos-M-Ms-y-Casanova/main/Tu%20decides%20hoy%20(Casanova).mp3",
+        "type": "audio/mpeg",
+        "duration": 156
+      }
+    },
+
+    {
+      "id": "Reggaeton-Music",      
+      "title": "Delirios",
+      "members": "Casanova",
+      "published_at": "2014",
+      "thumbnail": "/onetwoth.png",
+      "description": "<p>3 compositores</p><p>Sangre de acentos</p><p>WebAppRetro</p>",
+      "file": {
+        "url": "https://raw.githubusercontent.com/JuanSanz11/Album01-Discos-M-Ms-y-Casanova/main/Delirios%20(Casanova).mp3",
+        "type": "audio/mpeg",
+        "duration": 168
+      }
+    },
+
+    {
+      "id": "Reggaeton-Music",      
+      "title": "Nada de mentiras",
+      "members": "Casanova",
+      "published_at": "2010",
+      "thumbnail": "/onetwoth.png",
+      "description": "<p>3 compositores</p><p>Sangre de acentos</p><p>WebAppRetro</p>",
+      "file": {
+        "url": "https://raw.githubusercontent.com/JuanSanz11/Album01-Discos-M-Ms-y-Casanova/main/Nada%20de%20Mentiras%20(Casanova).mp3",
+        "type": "audio/mpeg",
+        "duration": 172
+      }
+    },
+
+    {
+      "id": "Reggaeton-Music",      
+      "title": "Se deja incitar",
+      "members": "Casanova",
+      "published_at": "2010",
+      "thumbnail": "/onetwoth.png",
+      "description": "<p>3 compositores</p><p>Sangre de acentos</p><p>WebAppRetro</p>",
+      "file": {
+        "url": "https://raw.githubusercontent.com/JuanSanz11/Album01-Discos-M-Ms-y-Casanova/main/Se%20deja%20incitar%20(Casanova).mp3",
+        "type": "audio/mpeg",
+        "duration": 163
+      }
+    },
+
+    {
+      "id": "Reggaeton-Music",      
+      "title": "Un dia de sol",
+      "members": "Casanova",
+      "published_at": "2011",
+      "thumbnail": "/onetwoth.png",
+      "description": "<p>3 compositores</p><p>Sangre de acentos</p><p>WebAppRetro</p>",
+      "file": {
+        "url": "https://raw.githubusercontent.com/JuanSanz11/Album01-Discos-M-Ms-y-Casanova/main/Un%20dia%20de%20sol%20(Casanova).mp3",
+        "type": "audio/mpeg",
+        "duration": 117
+      }
+    },
+
+    {
+      "id": "Reggaeton-Music",      
+      "title": "Algo rara",
+      "members": "Casanova",
+      "published_at": "2011",
+      "thumbnail": "/one.png",
+      "description": "<p>3 compositores</p><p>Sangre de acentos</p><p>WebAppRetro</p>",
+      "file": {
+        "url": "https://raw.githubusercontent.com/JuanSanz11/Album01-Discos-M-Ms-y-Casanova/main/Algo%20rara%20(Master%20%26%20More.mp3",
+        "type": "audio/mpeg",
+        "duration": 150
+      }
+    }
+
+  ]
+}
+
+
+
+
+
+
+
+
