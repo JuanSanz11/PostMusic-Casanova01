@@ -1,10 +1,4 @@
-<div align="center">
-	Hecho con ❤️ por Juan Sanz (https://github.com/JuanSanz11)
-</div>
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-
----
 		episodes/     # Página de episodio
 	services/       # Servicios de API
 	utils/          # Funciones utilitarias
