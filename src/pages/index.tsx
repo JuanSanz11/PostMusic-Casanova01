@@ -6,6 +6,7 @@ import { format, parseISO } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 
 import { api } from '../services/api';
+import serverData from '../../server.json';
 
 import { convertDurationToTimeString } from '../utils/convertDurationToTimeString';
 import styles from './home.module.scss';
@@ -122,13 +123,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
 
 export const getStaticProps: GetStaticProps = async () => {
   try {
-    const { data } = await api.get('episodes', {
-      params: {
-        _limit: 12,
-        _sort: 'published_at',
-        _order: 'desc'
-      }
-    });
+    const data = serverData.episodes;
 
     const episodes = data.map(episode => ({
       id: episode.id,

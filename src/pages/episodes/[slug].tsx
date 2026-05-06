@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { useEffect } from 'react';
 import { api } from '../../services/api';
+import serverData from '../../../server.json';
 import { format, parseISO } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import Image from 'next/image';
@@ -77,13 +78,7 @@ export default function Episode({ episode }: EpisodeProps) {
 export const getStaticPaths: GetStaticPaths = async() => {
   //Buscar categorias con mas acesso 
 
-  const { data } = await api.get('episodes', {
-    params: {
-      _limit: 12,
-      _sort: 'published_at',
-      _order: 'desc'
-    }
-  })
+  const data = serverData.episodes;
 
   const paths = data.map(episode => {
     return {
@@ -106,7 +101,13 @@ export const getStaticPaths: GetStaticPaths = async() => {
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const { slug } = ctx.params
 
-  const { data } = await api.get(`/episodes/${slug}`)
+  const data = serverData.episodes.find(episode => episode.id === slug);
+
+  if (!data) {
+    return {
+      notFound: true,
+    }
+  }
 
   const episode = {
       id: data.id,
