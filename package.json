@@ -22,7 +22,6 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "@types/date-fns": "^2.5.3",
     "@types/node": "^24.2.1",
     "@types/react": "^19.1.9",
     "eslint": "^9",

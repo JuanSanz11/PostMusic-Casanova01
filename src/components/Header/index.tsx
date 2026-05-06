@@ -1,5 +1,5 @@
-import format from 'date-fns/format';
-import {ptBR} from 'date-fns/locale/pt-BR'; // 👈 Asegúrate de tener esta línea
+import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 
 import styles from './styles.module.scss'
 
