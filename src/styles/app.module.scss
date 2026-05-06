@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+
+  main {
+    flex: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  .wrapper main {
+    padding-bottom: 12rem; // Espacio para el reproductor fijo en móvil
+  }
+}

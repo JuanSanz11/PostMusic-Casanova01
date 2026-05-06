@@ -1,0 +1,275 @@
+.playerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 2.5rem 3rem;
+  width: 26.5rem;
+  height: 100vh;
+
+  background: var(--bg-surface);
+  color: var(--text-main);
+  border-left: 1px solid var(--border-subtle);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--accent-secondary);
+    border-radius: 10px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+    
+    img {
+      filter: drop-shadow(0 0 5px var(--accent-primary));
+    }
+  }
+
+  footer {
+    align-self: stretch;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+    &.empty .progress {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (max-height: 720px) {
+  .playerContainer {
+    padding: 1.5rem 2rem;
+  }
+
+  .currentEpisode {
+    img { max-width: 150px; }
+    strong { margin-top: 1rem; font-size: 1rem; }
+  }
+
+  .buttons {
+    margin-top: 1.5rem;
+    .playButton {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .playerContainer {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    max-height: 85vh;
+    padding: 1.25rem 1rem 1.75rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border-radius: 2rem 2rem 0 0;
+    border-top: 1px solid var(--border-subtle);
+    z-index: 1000;
+  }
+
+  .playerContainer header { display: none; }
+
+  .currentEpisode {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    margin-bottom: 0.75rem;
+
+    img {
+      width: 50px !important;
+      height: 50px !important;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    strong {
+      margin-top: 0;
+      font-size: 0.9rem;
+      color: var(--text-main);
+    }
+  }
+
+  .emptyPlayer {
+    min-height: 3rem;
+    font-size: 0.8rem;
+  }
+
+  .buttons {
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+    
+    button img { scale: 0.7; }
+    .playButton { width: 3.2rem; height: 3.2rem; }
+  }
+}
+
+.currentEpisode {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+    border-radius: 1.5rem;
+    object-fit: cover;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--border-subtle);
+  }
+
+  strong {
+    display: block;
+    margin-top: 1.5rem;
+    font: 700 1.25rem Lexend, sans-serif;
+    line-height: 1.75rem;
+    color: var(--text-main);
+  }
+  
+  span {
+    display: block;
+    margin-top: 0.5rem;
+    opacity: 0.5;
+    font-size: 0.875rem;
+  }
+}
+
+.emptyPlayer {
+  width: 100%;
+  height: 16rem;
+  border: 2px dashed var(--border-subtle);
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text-dim);
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  font-family: monospace;
+
+  span {
+    width: 3rem;
+  }
+
+  .slider {
+    flex: 1;
+    .emptySlider {
+      width: 100%;
+      height: 4px;
+      background: var(--bg-panel);
+      border-radius: 2px;
+    }
+  } 
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 0.75rem;
+
+  button {
+    background: transparent;
+    border: 0;
+    font-size: 0;
+    transition: all 0.2s;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+
+    img {
+      /* Blanco Hielo por defecto */
+      filter: brightness(0) invert(1);
+      opacity: 0.7;
+      transition: all 0.2s;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.1;
+      filter: grayscale(1);
+    }
+
+    &:hover:not(:disabled) {
+      opacity: 1;
+      background: rgba(255, 255, 255, 0.05);
+      transform: scale(1.1);
+      img {
+        opacity: 1;
+        filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+      }
+    }
+
+    &.isActive {
+      opacity: 1;
+      background: rgba(255, 184, 0, 0.1);
+      img {
+        /* Ámbar Dorado para estados activos (#ffb800) */
+        filter: invert(72%) sepia(91%) saturate(1351%) hue-rotate(3deg) brightness(105%) contrast(105%) drop-shadow(0 0 8px #ffb800);
+      }
+    }
+
+    &.playButton {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      background: var(--bg-panel); /* Gris oscuro industrial */
+      border: 1px solid var(--border-subtle);
+      opacity: 1;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+
+      img {
+        filter: brightness(0) invert(1);
+        width: 1.8rem;
+        height: 1.8rem;
+        opacity: 1;
+      }
+
+      &:hover:not(:disabled) {
+        background: #25252b;
+        border-color: var(--accent-primary);
+        box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+        transform: scale(1.05);
+      }
+    }
+  }
+}
